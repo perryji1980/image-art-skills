@@ -1,1 +1,0 @@
-    Image Art Skills Collection
