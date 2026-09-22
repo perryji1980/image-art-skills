@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-09-22",
+  "repository": "https://github.com/perryji1980/image-art-skills",
+  "notes": [
+    "source_commit is null where the exact imported upstream revision was not recorded at import time.",
+    "upstream_head must not be treated as the imported revision unless verified by file comparison or import metadata.",
+    "Entries without a detected license remain references only and must not vendor upstream content."
+  ],
+  "resources": [
+    {
+      "name": "visual-director",
+      "type": "skill",
+      "path": "skills/director/visual-director",
+      "source_repo": null,
+      "source_commit": null,
+      "imported_date": "2026-09-22",
+      "license": "repository-local",
+      "local_modified": true,
+      "status": "stable",
+      "tracking": "local"
+    },
+    {
+      "name": "morandi-cinematic-poster-zeejay",
+      "type": "skill",
+      "path": "skills/movie-poster",
+      "source_repo": null,
+      "source_reference": "gathered-scenes-zine-skill",
+      "source_commit": null,
+      "imported_date": null,
+      "license": "unknown",
+      "local_modified": true,
+      "status": "stable",
+      "tracking": "provenance-incomplete"
+    },
+    {
+      "name": "scenes-gathered-zine-v1-3",
+      "type": "skill",
+      "path": "skills/实景拼贴",
+      "source_repo": null,
+      "source_reference": "gathered-scenes-zine-skill",
+      "source_commit": null,
+      "imported_date": null,
+      "license": "unknown",
+      "local_modified": true,
+      "status": "stable",
+      "tracking": "provenance-incomplete"
+    },
+    {
+      "name": "GPT-Image2-Skill",
+      "type": "toolkit",
+      "path": "toolkits/GPT-Image2-Skill",
+      "source_repo": "https://github.com/wuyoscar/GPT-Image2-Skill",
+      "source_commit": null,
+      "imported_date": null,
+      "license": "unverified",
+      "local_modified": false,
+      "status": "toolkit",
+      "tracking": "baseline-needed"
+    },
+    {
+      "name": "ai-image-prompts-skill",
+      "type": "toolkit",
+      "path": "toolkits/ai-image-prompts-skill",
+      "source_repo": "https://github.com/YouMind-OpenLab/ai-image-prompts-skill",
+      "source_commit": null,
+      "imported_date": "2026-09-20",
+      "license": "MIT",
+      "local_modified": false,
+      "status": "toolkit",
+      "tracking": "baseline-needed"
+    },
+    {
+      "name": "awesome-gpt-image-2-freestylefly",
+      "type": "toolkit",
+      "path": "toolkits/awesome-gpt-image-2-freestylefly",
+      "source_repo": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "source_commit": null,
+      "imported_date": "2026-09-20",
+      "license": "MIT",
+      "local_modified": false,
+      "status": "toolkit",
+      "tracking": "baseline-needed"
+    },
+    {
+      "name": "awesome-gpt-image-2-youmind",
+      "type": "prompt-library",
+      "path": "prompt-libraries/awesome-gpt-image-2-youmind",
+      "source_repo": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "source_commit": null,
+      "imported_date": "2026-09-20",
+      "license": "CC-BY-4.0",
+      "local_modified": false,
+      "status": "reference",
+      "tracking": "baseline-needed"
+    },
+    {
+      "name": "gpt4o-image-prompts",
+      "type": "source-reference",
+      "path": "prompt-libraries/gpt4o-image-prompts",
+      "source_repo": "https://github.com/songguoxs/gpt4o-image-prompts",
+      "source_commit": null,
+      "imported_date": "2026-09-20",
+      "license": "not-detected",
+      "local_modified": false,
+      "status": "reference",
+      "tracking": "upstream-only"
+    },
+    {
+      "name": "Awesome-AI-Images-Prompts",
+      "type": "source-reference",
+      "path": "prompt-libraries/Awesome-AI-Images-Prompts",
+      "source_repo": "https://github.com/dongyubin/Awesome-AI-Images-Prompts",
+      "source_commit": null,
+      "imported_date": "2026-09-20",
+      "license": "not-detected",
+      "local_modified": false,
+      "status": "reference",
+      "tracking": "upstream-only"
+    }
+  ],
+  "candidates": [
+    {
+      "name": "raw-photo-grade",
+      "source_repo": "https://github.com/majsterkovic/raw-photo-grade",
+      "intended_path": "skills/experimental/raw-photo-grade",
+      "status": "proposed"
+    },
+    {
+      "name": "Autochrome",
+      "source_repo": "https://github.com/hgayan7/autochrome",
+      "intended_path": "skills/experimental/autochrome",
+      "status": "proposed",
+      "license": "unverified"
+    },
+    {
+      "name": "Lightroom MCP integration",
+      "source_repo": "https://github.com/Automaat/lightroom-mcp",
+      "intended_path": "skills/photo-finishing/lightroom-integration",
+      "status": "proposed"
+    },
+    {
+      "name": "Photopea integration",
+      "source_repo": null,
+      "intended_path": "skills/experimental/photopea-integration",
+      "status": "proposed",
+      "tracking": "source-selection-needed"
+    }
+  ]
+}
