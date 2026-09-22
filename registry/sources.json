@@ -66,6 +66,24 @@
       ]
     },
     {
+      "name": "autochrome-photo-finishing",
+      "type": "external-engine-wrapper-skill",
+      "path": "skills/photo-finishing/autochrome",
+      "source_repo": "https://github.com/hgayan7/autochrome",
+      "source_commit": "bff1011ef0ffc223680dabd3a1666574e4073ef0",
+      "imported_date": "2026-09-22",
+      "license": "repository-local-wrapper",
+      "upstream_license": "not-verified",
+      "local_modified": true,
+      "status": "stable",
+      "tracking": "pinned-external-source-with-local-wrapper",
+      "notes": [
+        "Upstream source is not redistributed because the reviewed tree has no LICENSE file despite displaying an MIT badge.",
+        "The installer fetches the exact commit and applies a one-line missing Any import compatibility patch.",
+        "All 44 upstream tests passed after the patch, and an end-to-end synthetic photo edit/export smoke test passed."
+      ]
+    },
+    {
       "name": "GPT-Image2-Skill",
       "type": "toolkit",
       "path": "toolkits/GPT-Image2-Skill",
@@ -138,26 +156,5 @@
       "tracking": "upstream-only"
     }
   ],
-  "candidates": [
-    {
-      "name": "Autochrome",
-      "source_repo": "https://github.com/hgayan7/autochrome",
-      "intended_path": "skills/experimental/autochrome",
-      "status": "proposed",
-      "license": "unverified"
-    },
-    {
-      "name": "Lightroom MCP integration",
-      "source_repo": "https://github.com/Automaat/lightroom-mcp",
-      "intended_path": "skills/photo-finishing/lightroom-integration",
-      "status": "proposed"
-    },
-    {
-      "name": "Photopea integration",
-      "source_repo": null,
-      "intended_path": "skills/experimental/photopea-integration",
-      "status": "proposed",
-      "tracking": "source-selection-needed"
-    }
-  ]
+  "candidates": []
 }
