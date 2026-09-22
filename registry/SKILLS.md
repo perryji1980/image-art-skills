@@ -33,6 +33,7 @@ A normal request to “修图、调色、出片、增强、变专业” must not
 | visual-director | router skill | director | Classifying image requests and selecting the workflow | N/A | stable | `skills/director/visual-director/` |
 | morandi-cinematic-poster-zeejay | skill | creative-styles | Source-faithful cinematic photo posters driven by typography and negative space | Source photo locked; typography added | stable | `skills/movie-poster/` |
 | scenes-gathered-zine-v1-3 | skill | creative-styles | Torn-paper photo/illustration zines with simplified abstract fields | Mixed photo preservation and generative illustration | stable | `skills/实景拼贴/` |
+| autochrome-photo-finishing | skill | photo-finishing / photo-retouch | Everyday scene-aware correction, HSL, curves, natural portrait refinement, film looks, crop, and export | Deterministic pixel editing; original preserved | stable | `skills/photo-finishing/autochrome/` |
 | raw-photo-grade-experimental | experimental wrapper skill | raw-workflow | iPhone ProRAW, phone DNG, and dedicated-camera RAW development with a preview loop | Pixel-preserving global RAW development; rendered 8-bit sRGB exports | experimental | `skills/experimental/raw-photo-grade/` |
 | GPT-Image2-Skill | toolkit | generation/utilities | GPT Image generation, editing, prompt extraction, model guidance, and galleries | Depends on selected internal skill | toolkit | `toolkits/GPT-Image2-Skill/` |
 | ai-image-prompts-skill | toolkit | prompt-discovery | Searching a large cross-model prompt library with examples | Generative reference | toolkit | `toolkits/ai-image-prompts-skill/` |
@@ -55,6 +56,10 @@ Use `scenes-gathered-zine-v1-3` only when the user wants torn paper, zine, colla
 
 Use `raw-photo-grade-experimental` only when the user explicitly asks to test the experimental RAW workflow on a supported ProRAW, DNG, or camera RAW file. Do not route ordinary JPG, PNG, or HEIC editing here. Extract its pinned engine with the bundled installer, confirm `rawpy`/LibRaw availability, and visually inspect previews before any full-resolution export.
 
+### Everyday photo finishing
+
+Use `autochrome-photo-finishing` as the default for ordinary JPG, PNG, and WebP requests such as 修片、调色、增强、出片, natural portrait refinement, food/product color cleanup, travel/landscape finishing, and restrained film looks. Preserve the original, start conservatively, and visually inspect the rendered result before delivery.
+
 ### Toolkits and prompt libraries
 
 Use a toolkit when its internal executable skill or script matches the task. Use prompt libraries to research directions and build prompts; do not describe a prompt library as an editing engine.
@@ -75,13 +80,7 @@ These folders are reserved conceptually and should be created only when a real r
 
 ## Candidate queue
 
-These are not yet installed and must not be routed as available capabilities.
-
-| Candidate | Intended category | Admission note |
-|---|---|---|
-| Autochrome | photo-finishing / experimental | Inspect code and dependencies; no verified license at initial review |
-| Lightroom MCP integration | photo-finishing / integration | Store a thin integration skill and source record, not a full vendored runtime |
-| Photopea integration | photo-finishing / utilities | Validate reliable parameter execution for JPG/PNG and document limitations |
+No candidates are currently queued.
 
 ## Adding or updating a resource
 
