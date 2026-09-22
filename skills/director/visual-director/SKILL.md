@@ -60,11 +60,13 @@ Every added form, color block, shadow, highlight, texture, plant, object, or typ
 
 Use the registry’s current inventory:
 
+- `autochrome-photo-finishing` as the default deterministic engine for ordinary JPG, PNG, and WebP photo finishing and natural retouching.
+- `raw-photo-grade-experimental` only for an explicitly requested test of supported RAW/DNG development.
 - `morandi-cinematic-poster-zeejay` for source-faithful cinematic typography posters.
 - `scenes-gathered-zine-v1-3` for deliberate torn-paper photo/illustration collage.
 - GPT Image toolkits and prompt libraries for generation, prompt development, and reference exploration.
 
-Do not route ordinary photo finishing into a poster or collage skill. Until a dedicated photo-finishing engine is registered, state the available execution method and keep edits conservative.
+Do not route ordinary photo finishing into a poster, collage, or RAW skill. Preserve the uploaded original, keep Autochrome adjustments conservative by default, and inspect every rendered result before delivery.
 
 ## 7. Quality gate
 
