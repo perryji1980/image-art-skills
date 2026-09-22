@@ -47,6 +47,25 @@
       "tracking": "provenance-incomplete"
     },
     {
+      "name": "raw-photo-grade-experimental",
+      "type": "experimental-wrapper-skill",
+      "path": "skills/experimental/raw-photo-grade",
+      "source_repo": "https://github.com/majsterkovic/raw-photo-grade",
+      "source_commit": "b5be2a18aa668128906598feb911177171606d5e",
+      "source_commit_date": "2026-09-01",
+      "imported_date": "2026-09-22",
+      "license": "MIT",
+      "local_modified": true,
+      "status": "experimental",
+      "tracking": "pinned-archive-with-local-wrapper",
+      "archive_sha256": "7f45c97e2385520fb6064a5f72b58534d839acdef31df2faef6b214d78bcaaf8",
+      "notes": [
+        "Bundled upstream archive is unmodified and excludes generated Python bytecode caches.",
+        "The local wrapper normalizes triggering and documents verified limitations.",
+        "Syntax, CLI, grade math, crop, and preview smoke tests passed; real RAW decode has not yet been tested."
+      ]
+    },
+    {
       "name": "GPT-Image2-Skill",
       "type": "toolkit",
       "path": "toolkits/GPT-Image2-Skill",
@@ -120,12 +139,6 @@
     }
   ],
   "candidates": [
-    {
-      "name": "raw-photo-grade",
-      "source_repo": "https://github.com/majsterkovic/raw-photo-grade",
-      "intended_path": "skills/experimental/raw-photo-grade",
-      "status": "proposed"
-    },
     {
       "name": "Autochrome",
       "source_repo": "https://github.com/hgayan7/autochrome",
